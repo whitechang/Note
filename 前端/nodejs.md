@@ -1,4 +1,5 @@
 # Node.JS 学习笔记
+
 ## Node基础
 - Node.js是什么
   + JavaScript运行时，既不是语言，也不是框架，是一个平台
@@ -14,3 +15,21 @@
   + 核心模块
     * Node提供的具名模块，如 fs文件操作模块、http网络服务模块、os操作系统模块、path路径处理模块
     * 所有模块需要使用`require`加载，如： `var fs = require('fs')`
+  + 第三方模块
+    * art-template node_modules
+  + 自己写的模块
+- 模块化 
+  + 文件作用域
+  + 通信规则
+    * 加载require
+    * 导出
+- CommonJS 模块规范
+  + 模块作用域
+  + 使用require方法加载模块 ` var 自定义变量名 = require('模块') `
+  + 使用exports 接口对象导出模块成员
+    
+## 服务的渲染
+  - 服务端使用模板引擎，直接传页面到前端 （art-template）
+  - 服务端渲染与客户端渲染的区别
+    + 客户端渲染不利于SEO搜索引擎优化
+    + 服务的渲染可以被爬虫抓取到
