@@ -33,3 +33,15 @@
   - 服务端渲染与客户端渲染的区别
     + 客户端渲染不利于SEO搜索引擎优化
     + 服务的渲染可以被爬虫抓取到
+
+## 模块查找机制
+
++ 优先从缓存加载
++ 核心模块
++ 路径形式的文件模块
++ 第三方模块
+  + node_modules/art-template/
+  + node_modules/art-template/package.json
+  + node_modules/art-template/package.json main
+  + index.js 备选项
+  + 如果没有node_modules 以此往上查找
